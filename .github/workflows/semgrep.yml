@@ -98,7 +98,5 @@ jobs:
         run: |
           semgrep scan --config=p/owasp-top-ten \
             --severity=ERROR --error \
-            devops-tp12/app \
-            devops-tp12/chart \
-            devops-tp12/monitoring-k8s-manifests.yaml \
-            guia-11
+            backend \
+            devops-portfolio
