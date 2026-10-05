@@ -31,8 +31,8 @@ jobs:
       - name: Renderizar Helm para el análisis
         run: |
           mkdir -p .semgrep-tmp
-          helm template tp15 devops-tp12/chart \
-            -f devops-tp12/values-local.yaml \
+          helm template tp15 devops-portfolio \
+            -f devops-portfolio/values.yaml \
             > .semgrep-tmp/helm-rendered.yaml
 
       - name: Ejecutar Semgrep y generar JSON
