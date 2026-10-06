@@ -7,7 +7,7 @@ on:
     branches: [ main ]
 
 env:
-  DOCKER_IMAGE: ${{ secrets.DOCKERHUB_USERNAME }}/devops-portfolio
+  DOCKER_IMAGE: ${{ secrets.jererios }}/devops-portfolio
   HELM_RELEASE_NAME: mi-app
   K8S_NAMESPACE: devops-portfolio
 
