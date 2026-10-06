@@ -129,7 +129,7 @@ jobs:
           format: 'table'
           exit-code: '0'          # Permite continuar el flujo
           severity: 'LOW,MEDIUM'
-        output: 'trivy-low-medium-report.txt'
+          output: 'trivy-low-medium-report.txt'
 
       - name: Publicar Artifact de Vulnerabilidades Menores
         uses: actions/upload-artifact@v4
